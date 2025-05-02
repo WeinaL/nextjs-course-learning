@@ -3,14 +3,7 @@ import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { lusitana } from "@/app/ui/fonts";
 import Image from "next/image";
-import { Metadata } from 'next';
- 
 
-export const metadata: Metadata = {
-  title: 'Acme Dashboard',
-  description: 'The official Next.js Course Dashboard, built with App Router.',
-  metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
-};
 
 export default function Page() {
   return (
@@ -46,7 +39,7 @@ export default function Page() {
             className="hidden md:block"
             alt="Screenshots of the dashboard project showing desktop version"
           />
-                    <Image
+           <Image
             src="/hero-mobile.png"
             width={560}
             height={620}
